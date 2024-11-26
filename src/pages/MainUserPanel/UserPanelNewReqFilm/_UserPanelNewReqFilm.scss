@@ -1,0 +1,117 @@
+$color_1: #777;
+$color_2: #000;
+$color_3: #fff;
+$color_4: #888;
+$background-color_1: #29B6F6;
+$background-color_2: transparent;
+$background-color_3: #29b5f6a6;
+
+.panel-new-request {
+	.form {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		>.input {
+			width: calc(50% - 10px);
+			display: inline-block;
+			margin-bottom: 20px;
+			label {
+				width: 100%;
+				display: block;
+				font-size: 13px;
+				color: $color_1;
+				font-weight: 500;
+				margin-bottom: 10px;
+			}
+			input[type=text] {
+				width: 100%;
+				display: block;
+				border: 1px solid rgba(0,0,0,.1);
+				border-radius: 5px;
+				padding: 6px 10px;
+				outline: 0;
+			}
+			.switch-item {
+				width: 200px;
+				display: inline-flex;
+				border: 1px solid rgba(0,0,0,.1);
+				border-radius: 30px;
+				padding: 2px;
+				justify-content: space-between;
+				.item {
+					width: calc(50% - 2px);
+					border-radius: 30px;
+					text-align: center;
+					cursor: pointer;
+					color: $color_2;
+					font-size: 13px;
+					font-weight: 500;
+					padding: 4px;
+				}
+				.item.active {
+					background-color: $background-color_1;
+					color: $color_3;
+				}
+			}
+			>.nice-select {
+				color: $color_4;
+				background-color: $background-color_2;
+				border: 1px solid rgba(0,0,0,.1);
+				border-radius: 5px;
+				&::after {
+					border-bottom: 2px solid #888;
+					border-right: 2px solid #888;
+				}
+			}
+		}
+		>.input.submit {
+			width: unset;
+			margin-bottom: 0;
+			button {
+				display: block;
+				width: 100%;
+				color: $color_3;
+				background-color: $background-color_1;
+				border: 0;
+				padding: 8px 20px;
+				border-radius: 10px;
+				font-size: 14px;
+				font-weight: 500;
+				cursor: pointer;
+				transition: .3s background-color;
+				-webkit-transition: .3s background-color;
+				&:hover {
+					background-color: #ff5858;
+				}
+			}
+		}
+		>.input.last {
+			margin-bottom: 0;
+		}
+	}
+}
+.panel-new-request.new-ticket {
+	.form {
+		>.input.last {
+			textarea {
+				width: 100%;
+				display: block;
+				border: 1px solid rgba(0,0,0,.1);
+				border-radius: 5px;
+				padding: 6px 10px;
+				outline: 0;
+				height: 100px;
+				min-height: 100px;
+				min-width: 100%;
+				resize: vertical;
+			}
+			width: 100%;
+		}
+		>.input.submit {
+			margin-top: 10px;
+		}
+	}
+}
