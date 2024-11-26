@@ -1,0 +1,221 @@
+$color_1: #bdbdbd;
+$color_2: #777;
+$color_3: #29B6F6;
+$color_4: #fff;
+$background-color_1: #fff;
+$background-color_2: rgba(0,0,0,.5);
+
+.mainSite-sidebar {
+	.sidebar-box {
+		.box-content {
+			.post-slider {
+				padding-top: 10px;
+				.slider-navigation {
+					display: none;
+				}
+				.slider-pagination {
+					display: none;
+				}
+				.swiper-slide {
+					.main-item {
+						.img-cover {
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							right: 0;
+							top: 0;
+							border-radius: 10px;
+							background-color: $background-color_2;
+							visibility: hidden;
+							opacity: 0;
+							transition: .5s all;
+							-webkit-transition: .5s all;
+							.playicon {
+								.icon {
+									width: 30px;
+									height: 30px;
+									fill: #29B6F6;
+								}
+							}
+							.popular-rate {
+								color: $color_3;
+								direction: ltr;
+								font-size: 14px;
+								position: absolute;
+								bottom: 10px;
+								right: 10px;
+								i {
+									margin-right: 5px;
+								}
+							}
+							.imdb-rate {
+								color: $color_4;
+								direction: ltr;
+								font-size: 13px;
+								position: absolute;
+								bottom: 10px;
+								left: 10px;
+								.imdb-icon {
+									margin-right: 5px;
+									font-size: 11px;
+								}
+								span {
+									font-weight: 600;
+									font-size: 16px;
+								}
+							}
+						}
+						&:hover {
+							.img-cover {
+								visibility: visible;
+								opacity: 1;
+								transform: scale(.9);
+							}
+						}
+					}
+				}
+			}
+			.post-slider.one_half_slider {
+				.slider-navigation {
+					span {
+						font-size: 20px;
+						background-color: $background-color_1;
+						box-shadow: 0 4px 27px rgb(0 0 0 / 18%);
+						width: 50px;
+						z-index: 1;
+						height: 38px;
+						cursor: pointer;
+						color: $color_1;
+						transition: .3s all;
+						&:hover {
+							color: $color_2;
+						}
+					}
+					span.prev {
+						border-radius: 30px 0 0 30px;
+					}
+					span.next {
+						border-radius: 0 30px 30px 0;
+					}
+					span.swiper-button-disabled {
+						opacity: 0;
+						visibility: hidden;
+					}
+				}
+			}
+			.post-slider.three_in_line_slider {
+				.slider-pagination {
+					margin-top: 15px;
+					.swiper-pagination-bullet {
+						margin: 0 2px;
+						transition: .3s all;
+					}
+					.swiper-pagination-bullet.swiper-pagination-bullet-active {
+						width: 15px;
+						border-radius: 5px;
+						background: #29B6F6;
+					}
+				}
+			}
+		}
+	}
+}
+.post-slider.one_half_slider {
+	.swiper-slide {
+		transform: scale(.8);
+		opacity: .4;
+		transition: .3s all;
+		.main-item {
+			border-radius: 10px;
+			height: 230px;
+		}
+	}
+	.swiper-slide.swiper-slide-active {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+.post-slider.three_in_line_slider {
+	.swiper-slide {
+		.main-item {
+			height: 125px;
+			border-radius: 10px;
+			.img-cover {
+				.playicon {
+					.icon {
+						width: 20px;
+						height: 20px;
+					}
+				}
+				.imdb-rate {
+					top: 5px;
+					left: 5px;
+					font-size: 11px;
+					span {
+						font-size: 14px;
+					}
+				}
+				.popular-rate {
+					bottom: 5px;
+					right: 5px;
+					font-size: 13px;
+					i {
+						margin-right: 3px;
+					}
+				}
+			}
+		}
+	}
+}
+.post-slider.grid_slider {
+	.swiper-slide {
+		.main-item {
+			.img-cover {
+				.playicon {
+					.icon {
+						width: 20px;
+						height: 20px;
+					}
+				}
+				.imdb-rate {
+					top: 5px;
+					left: 5px;
+					font-size: 11px;
+					span {
+						font-size: 14px;
+					}
+				}
+				.popular-rate {
+					bottom: 5px;
+					right: 5px;
+					font-size: 13px;
+					i {
+						margin-right: 3px;
+					}
+				}
+			}
+		}
+	}
+	.swiper-wrapper {
+		.swiper-slide {
+			width: calc(33.33% - 5px);
+			margin-top: 10px;
+			&:nth-child(1) {
+				width: calc(50% - 5px);
+				.main-item {
+					height: 230px;
+				}
+			}
+			&:nth-child(2) {
+				width: calc(50% - 5px);
+				.main-item {
+					height: 230px;
+				}
+			}
+		}
+		.main-item {
+			height: 150px;
+			border-radius: 10px;
+		}
+	}
+}
