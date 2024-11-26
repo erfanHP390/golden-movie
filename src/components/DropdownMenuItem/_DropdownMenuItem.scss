@@ -1,0 +1,44 @@
+$color_1: #000;
+$color_2: #29B6F6;
+$background-color_1: #29B6F6;
+
+.site-header {
+	>.main-header-side {
+		.header-info {
+			.header-nav-info {
+				.header-menu {
+					>li {
+						>.dropdown-menu-m {
+							.dropdown-list {
+								>.item {
+									width: calc(50% - 5px);
+									margin-bottom: 10px;
+									padding-right: 16px;
+									&::before {
+										content: "";
+										width: 8px;
+										height: 8px;
+										background-color: $background-color_1;
+										border-radius: 50%;
+										margin-left: 5px;
+										top: 6px;
+									}
+									>a {
+										color: $color_1;
+										font-weight: 400;
+										font-size: 14px;
+										transition: .3s all;
+										&:hover {
+											padding-right: 3px;
+											color: $color_2 !important;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
