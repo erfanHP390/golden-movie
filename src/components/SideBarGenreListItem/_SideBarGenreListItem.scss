@@ -1,0 +1,57 @@
+$color_1: #757f95;
+$color_2: #29B6F6;
+$border-color_1: #29B6F6;
+
+.mainSite-sidebar {
+	.sidebar-box {
+		.box-content {
+			.genre-list {
+				display: flex;
+				.genre {
+					width: calc(50% - 5px);
+					margin-top: 10px;
+					a {
+						padding: 7px 15px;
+						border-radius: 50px;
+						color: $color_1;
+						border: 2px solid #757f95;
+						transition: 0.5s all ease;
+						&:hover {
+							color: $color_2;
+							border-color: $border-color_1;
+							.title {
+								color: $color_2;
+								border-color: $border-color_1;
+							}
+							.count {
+								color: $color_2;
+								border-color: $border-color_1;
+							}
+						}
+						.count {
+							&::before {
+								content: "(";
+								margin-left: 3px;
+								display: inline-block;
+							}
+							&::after {
+								content: ")";
+								margin-right: 3px;
+								display: inline-block;
+							}
+							font-size: 12px;
+							color: $color_1;
+							transition: 0.5s all ease;
+						}
+						.title {
+							font-weight: 500;
+							color: $color_1;
+							font-size: 14px;
+							transition: 0.5s all ease;
+						}
+					}
+				}
+			}
+		}
+	}
+}
