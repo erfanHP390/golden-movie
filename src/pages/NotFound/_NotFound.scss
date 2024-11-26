@@ -1,0 +1,59 @@
+$color_1: #fff;
+$font-family_1: "IranSans";
+$background-color_1: #29B6F6;
+
+.body {
+	width: 100vw;
+	height: 100vh;
+	background-color: $background-color_1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.mainbox {
+	background-color: $background-color_1;
+	margin: auto;
+	height: 600px;
+	width: 600px;
+	position: relative;
+}
+.err {
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: 11rem;
+	position: absolute;
+	left: 20%;
+	top: 8%;
+}
+.far {
+	position: absolute;
+	font-size: 8.5rem;
+	left: 42%;
+	top: 15%;
+	color: $color_1;
+}
+.err2 {
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: 11rem;
+	position: absolute;
+	left: 68%;
+	top: 8%;
+}
+.msg-not {
+	text-align: center;
+	font-family: $font-family_1;
+	font-size: 1.6rem;
+	position: absolute;
+	left: 16%;
+	top: 45%;
+	width: 75%;
+}
+a {
+	text-decoration: none;
+	color: $color_1;
+	&:hover {
+		text-decoration: underline;
+	}
+}
