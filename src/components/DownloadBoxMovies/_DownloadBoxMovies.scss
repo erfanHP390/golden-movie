@@ -1,0 +1,324 @@
+$color_1: #555;
+$color_2: #ffc107;
+$color_3: #29B6F6;
+$color_4: #ff9800;
+$color_5: #666;
+$color_6: #888;
+$color_7: #141821;
+$color_8: #fff;
+$color_9: #10d876;
+$color_10: #008f6e;
+$background-color_1: #29B6F6;
+$background-color_2: #fff;
+$background-color_3: hsl(0deg 0% 100% / 44%);
+$background-color_4: #f3f3f3;
+$background-color_5: #a1a1a1;
+$background-color_6: #ff98001a;
+$background-color_7: #10d8763d;
+$background-color_8: #10d876;
+$background-color_9: #ff9800;
+$background-color_10: #ebebeb;
+$background-color_11: #ff5858;
+$background-color_12: #008f6e;
+
+.main-single {
+	.movies-body {
+		.main-side-item.download-box {
+			.headline-title {
+				width: 100%;
+				display: flex;
+				font-size: 12px;
+				color: $color_1;
+				font-weight: 500;
+				margin-bottom: 15px;
+				align-items: center;
+				flex-wrap: wrap;
+				.desc {
+					display: flex;
+					padding-right: 19px;
+					width: 100%;
+				}
+				.icon-nim {
+					color: $color_2;
+					display: inline-block;
+					font-size: 14px;
+					margin-left: 6px;
+					position: relative;
+				}
+				.item {
+					color: $color_3;
+					font-weight: 600;
+					display: inline-block;
+					margin: 0 5px;
+					font-weight: 900;
+				}
+				>.title {
+					display: flex;
+					align-items: center;
+					width: 100%;
+					.seprator {
+						flex: 1;
+						height: 1px;
+						background-color: $background-color_1;
+						margin-right: 20px;
+					}
+					.icon {
+						margin-left: 7px;
+						color: $color_4;
+						font-size: 18px;
+						margin-top: -9px;
+					}
+					span {
+						font-weight: 300;
+						color: $color_5;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+		.main-side-item.download-box.movies {
+			.dl-box {
+				.switch-type {
+					width: 100%;
+					display: flex;
+					white-space: nowrap;
+					margin-bottom: -20px;
+					overflow: auto;
+					span {
+						cursor: pointer;
+						margin-left: 5px;
+						font-size: 13px;
+						font-weight: 300;
+						padding: 10px 20px 25px;
+						border-radius: 20px 20px 0 0;
+						transition: all .3s ease 0s;
+						&:hover {
+							background-color: $background-color_4;
+						}
+					}
+					span.active {
+						color: $color_8 !important;
+						background-color: $background-color_5;
+					}
+					span.sub {
+						&:hover {
+							background-color: $background-color_6;
+						}
+					}
+					span.dub {
+						&:hover {
+							background-color: $background-color_7;
+						}
+					}
+					span.dub.active {
+						background-color: $background-color_8 !important;
+						color: $color_8;
+					}
+					span.sub.active {
+						background-color: $background-color_9 !important;
+						color: $color_8;
+					}
+				}
+				.type-list {
+					width: 100%;
+					position: relative;
+					z-index: 1;
+					background-color: $background-color_10;
+					border-radius: 20px;
+					padding: 8px;
+					max-height: 500px;
+					overflow: auto;
+					display: none;
+					.item-type {
+						width: 100%;
+						display: flex;
+						background-color: $background-color_2;
+						padding: 20px;
+						border-radius: 20px;
+						margin-bottom: 10px;
+						justify-content: space-between;
+						align-items: center;
+						min-height: 85px;
+						&:last-child {
+							margin-bottom: 0;
+						}
+						.side {
+							display: inline-flex;
+							align-items: center;
+							.q-info {
+								color: $color_7;
+								font-weight: 300;
+								font-size: 14px;
+								margin-left: 20px;
+								display: inline-block;
+								.price {
+									color: $color_9;
+									font-weight: 600;
+								}
+							}
+							.q-info.type {
+								color: $color_8;
+								font-size: 11px;
+								border-radius: 30px;
+								padding: 3px 15px 2px;
+							}
+							.q-info.type.dub {
+								background-color: $background-color_8;
+							}
+							.q-info.type.sub {
+								background-color: $background-color_1;
+							}
+							.q-info.sub-type {
+								border: 1px solid rgba(0,0,0,.1);
+								border-radius: 30px;
+								padding: 5px 15px 2px;
+							}
+							.btn {
+								display: inline-flex;
+								align-items: center;
+								font-size: 15px;
+								color: $color_7;
+								padding: 10px 15px;
+								border-radius: 10px;
+								margin-right: 10px;
+								cursor: pointer;
+								box-shadow: 0 4px 15px rgb(0 0 0 / 6%);
+								transition: .3s all;
+								-webkit-transition: .3s all;
+								i {
+									display: inline-flex;
+									align-items: center;
+									justify-content: center;
+									border-radius: 7px;
+									margin-left: 7px;
+									margin-top: -2px;
+									transition: .3s all;
+									-webkit-transition: .3s all;
+								}
+								span {
+									font-weight: 300;
+									color: $color_1;
+									transition: .3s all;
+									-webkit-transition: .3s all;
+								}
+								&:hover {
+									i {
+										color: $color_8;
+									}
+									span {
+										color: $color_8;
+									}
+								}
+							}
+							.btn.sound {
+								i {
+									color: $color_9;
+								}
+								&:hover {
+									background-color: $background-color_8;
+								}
+							}
+							.btn.subtitle {
+								i {
+									color: $color_4;
+								}
+								&:hover {
+									background-color: $background-color_9;
+								}
+							}
+							.btn.ex-qua {
+								i {
+									color: $color_10;
+								}
+								&:hover {
+									background-color: $background-color_12;
+								}
+							}
+							.btn.dllink {
+								background-color: $background-color_1;
+								color: $color_8;
+								span {
+									color: $color_8;
+								}
+								&:hover {
+									transition: background-color 0.5s ease;
+									background-color: $background-color_11;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.main-side-item.download-box.series {
+	.dl-box {
+		.dlbox-episodes {
+			.episode-list {
+				.ep-item {
+					.headline {
+						width: 100%;
+						display: flex;
+						background-color: $background-color_2;
+						cursor: pointer;
+						padding: 15px 20px;
+						justify-content: space-between;
+						align-items: center;
+						.right {
+							display: inline-flex;
+							align-items: center;
+							i {
+								font-size: 14px;
+								position: relative;
+								top: -2px;
+								color: $color_6;
+								margin-left: 10px;
+							}
+							.item-info {
+								color: $color_7;
+								font-weight: 500;
+								font-size: 14px;
+								margin-left: 20px;
+								display: inline-block;
+							}
+						}
+						.open-icon {
+							width: 30px;
+							height: 30px;
+							border-radius: 50%;
+							display: inline-flex;
+							align-items: center;
+							justify-content: center;
+							background-color: $background-color_3;
+							box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+							font-size: 11px;
+							i {
+								transition: .3s transform;
+							}
+						}
+					}
+				}
+				.ep-item.active {
+					.headline {
+						.open-icon {
+							i {
+								transform: rotate(-90deg);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.main-single .movies-body .main-side-item.download-box .dl-box {
+	width: 100%;
+	display: block;
+	border-radius: 20px;
+	overflow: hidden;
+	background: #e8e9eb;
+	  background-color: rgb(232, 233, 235);
+	padding: 20px;
+  }
