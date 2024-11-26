@@ -1,10 +1,15 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
+
 
 import { movie } from '../../../js/data'
 
 export default function AdminListFilm () {
   return (
     <>
+        <Helmet>
+      <title>مدیریت پنل - لیست فیلم ها</title>
+    </Helmet>
       <div class='dashboardPage w-100 h-100 gray-bg p-5 pt-3'>
         <div
           id='MoviesList'

@@ -15,6 +15,8 @@ import ResponsiveNav from '../../components/ResponsiveNav/ResponsiveNav'
 import ResponsiveSideBar from '../../components/ResponseSideBar/ResponseSideBar'
 import Footer from '../../components/Footer/Footer'
 import ScrollTopBtn from "../../components/ScrollTopBtn/ScrollTopBtn"
+import { Helmet } from 'react-helmet'
+
 
 import { bestMovie, bestSerials, movie } from '../../js/data'
 
@@ -33,6 +35,9 @@ export default function SingleSeries () {
 
   return (
     <>
+        <Helmet>
+      <title>{`فیلم ${smovie && smovie.title}`}</title>
+    </Helmet>
       <Header />
       <div className='main-site'>
         <div className='main-single'>

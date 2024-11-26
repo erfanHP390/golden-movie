@@ -21,6 +21,9 @@ export default function AdminPanelUsers () {
 
   return (
     <>
+        <Helmet>
+      <title>مدیریت پنل - لیست کاربران</title>
+    </Helmet>
       <div class='users w-100 box-bg p-xl-5 p-lg-5 p-xxl-5  d-flex align-items-center flex-column custom-box-shadow '>
         <h5 class='light-Gray-text mb-4'>لیست کاربران</h5>
         <hr class='w-75' />

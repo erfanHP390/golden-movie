@@ -1,9 +1,13 @@
 import React from 'react'
 import Chart from '../../../components/Admin/Chart/Chart'
+import { Helmet } from 'react-helmet'
 
 export default function AminPanelIndex() {
   return (
     <>
+    <Helmet>
+      <title>مدیریت پنل - داشبورد</title>
+    </Helmet>
       {/* <!-- dashboardPage --> */}
       <div class="dashboardPage w-100 h-100 gray-bg pt-4 pb-4 ">
         

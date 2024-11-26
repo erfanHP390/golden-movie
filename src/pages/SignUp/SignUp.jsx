@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet';
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -55,7 +56,11 @@ const SignUp = () => {
   };
 
   return (
-    <div className='main-auth-panel'>
+    <>
+    <Helmet>
+      <title>ثبت نام</title>
+    </Helmet>
+        <div className='main-auth-panel'>
       <div className='right-side'>
         <div className='form-box'>
           <div className='switch-auth'>
@@ -99,6 +104,7 @@ const SignUp = () => {
         <img src='./images/PosterYM.jpg' alt='login' />
       </div>
     </div>
+    </>
   );
 };
 

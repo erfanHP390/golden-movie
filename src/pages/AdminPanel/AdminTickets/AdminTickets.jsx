@@ -1,8 +1,13 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
+
 
 export default function AdminTickets () {
   return (
     <>
+        <Helmet>
+      <title>مدیریت پنل - لیست تیکت ها</title>
+    </Helmet>
       <div class='tickets p-5 w-100 d-flex justify-content-center align-items-center flex-column'>
         <h5 class='light-Gray-text'>لیست تیکت ها</h5>
         <hr class='w-75 mb-5' />

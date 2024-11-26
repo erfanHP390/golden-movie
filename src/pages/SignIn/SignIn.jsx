@@ -1,9 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet';
+
 
 export default function SignIn () {
   return (
     <>
+        <Helmet>
+      <title>ورود</title>
+    </Helmet>
       <div class='main-auth-panel'>
         <div class='right-side'>
           <div class='form-box'>

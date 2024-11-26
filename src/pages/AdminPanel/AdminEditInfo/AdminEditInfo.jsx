@@ -1,8 +1,13 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
+
 
 export default function AdminEditInfo () {
   return (
     <>
+        <Helmet>
+      <title>مدیریت پنل - ویریاش اطلاعات</title>
+    </Helmet>
           <div
         class="infoForm w-100 d-flex justify-content-center align-items-center flex-column"
       >

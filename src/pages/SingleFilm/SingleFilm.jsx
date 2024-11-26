@@ -19,6 +19,7 @@ import ScrollTopBtn from "../../components/ScrollTopBtn/ScrollTopBtn"
 import ChooseUs from "../../components/ChooseUs/ChooseUs"
 import Footer from "../../components/Footer/Footer"
 import FreePlan from "../../components/FreePlan/FreePlan"
+import { Helmet } from 'react-helmet'
 
 
 
@@ -38,6 +39,9 @@ export default function SingleFilm () {
 
   return (
     <>
+    <Helmet>
+      <title>{`فیلم ${smovie && smovie.title}`}</title>
+    </Helmet>
       <Header />
       <main class='main-site'>
         <div class='main-single'>
