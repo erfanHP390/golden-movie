@@ -1,0 +1,36 @@
+$color_1: #fff;
+
+.site-header {
+	>.main-header-user {
+		>.head-user-side {
+			.switch-mode {
+				&::before {
+					content: "";
+					position: absolute;
+					width: 26px;
+					height: 26px;
+					border-radius: 50%;
+					background: #fff;
+					left: 3px;
+					top: 2px;
+					transform: translateX(27px);
+					transition: .3s transform;
+					-webkit-transition: .3s transform;
+				}
+				display: inline-flex;
+				width: 60px;
+				height: 31px;
+				background: #fa8607 linear-gradient(to bottom,#fa8607,#fa961b,#fcb033,#fecc51);
+				border-radius: 30px;
+				justify-content: space-between;
+				align-items: center;
+				padding: 7px;
+				color: $color_1;
+				position: relative;
+				cursor: pointer;
+				left: 125px;
+				z-index: 9;
+			}
+		}
+	}
+}
