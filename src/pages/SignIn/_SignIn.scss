@@ -1,0 +1,213 @@
+$color_1: #555;
+$color_2: #f44336;
+$color_3: #4caf50;
+$color_4: #29B6F6;
+$color_5: #888;
+$color_6: #fff;
+$background-color_1: #fff;
+$background-color_2: rgba(255,255,255,.8);
+$background-color_3: #f4f6fb;
+$background-color_4: #29B6F6;
+$background-color_5: #f4433621;
+$background-color_6: #4caf501a;
+$background-color_7: rgba(0,0,0,.2);
+
+.main-auth-panel {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	.right-side {
+		width: 400px;
+		background-color: $background-color_1;
+		height: 100%;
+		box-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%);
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 50px;
+		.form-box {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+			position: relative;
+			>.loader-box {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: $background-color_2;
+			}
+			>.loader-box.none {
+				display: none;
+			}
+			.switch-auth {
+				background-color: $background-color_3;
+				padding: 5px;
+				display: inline-flex;
+				border-radius: 30px;
+				.btn {
+					font-size: 13px;
+					padding: 5px 20px;
+					text-align: center;
+					border-radius: 30px;
+					cursor: pointer;
+					color: $color_1;
+				}
+				.btn.active {
+					background-color: $background-color_4;
+				}
+			}
+			h1 {
+				width: 100%;
+				display: block;
+				font-weight: 900;
+				margin-top: 8px;
+			}
+			.form {
+				width: 100%;
+				display: block;
+				margin-top: 15px;
+				>.alert {
+					width: 100%;
+					font-size: 14px;
+					font-weight: 300;
+					padding: 8px;
+					text-align: right;
+					margin-bottom: 15px;
+					display: none;
+				}
+				>.alert.error {
+					border-right: 2px solid #f44336;
+					background-color: $background-color_5;
+					color: $color_2;
+				}
+				>.alert.success {
+					background-color: $background-color_6;
+					color: $color_3;
+					border-right: 2px solid #4caf50;
+				}
+				.input {
+					width: 100%;
+					display: flex;
+					background-color: $background-color_3;
+					margin-bottom: 10px;
+					align-items: center;
+					border-right: 3px solid #29B6F6;
+					border-radius: 15px;
+					>i {
+						color: $color_4;
+						width: 30px;
+						display: inline-block;
+					}
+					>input[type=password] {
+						background: 0 0;
+						border: 0;
+						width: calc(100% - 30px);
+						padding: 15px 5px;
+						outline: 0;
+						font-size: 13px;
+					}
+					>input[type=text] {
+						background: 0 0;
+						border: 0;
+						width: calc(100% - 30px);
+						padding: 15px 5px;
+						outline: 0;
+						font-size: 13px;
+					}
+				}
+				.operations {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					margin-top: 25px;
+					align-items: center;
+					>.forget {
+						color: $color_5;
+						font-size: 12px;
+						display: inline-block;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+					>button[type=submit] {
+						background-color: $background-color_4;
+						color: $color_6;
+						border: 0;
+						padding: 10px 15px;
+						display: inline-block;
+						border-radius: 10px;
+						font-size: 12px;
+						cursor: pointer;
+						outline: 0;
+                        transition: all 0.5ms  ease;
+                        &:hover {
+                            background-color: #ff5858;
+                        }
+					}
+				}
+				.back-site {
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					text-align: center;
+					margin-top: 45px;
+					>a {
+						color: $color_6;
+						display: inline-flex;
+						white-space: nowrap;
+						align-items: center;
+						.icon {
+							width: 18px;
+							height: 18px;
+							background-color: $background-color_7;
+							border-radius: 50%;
+							display: inline-flex;
+							align-items: center;
+							justify-content: center;
+							font-size: 11px;
+							color: $color_6;
+							transition: .3s transform;
+							-webkit-transition: .3s transform;
+						}
+						span {
+							color: $color_1;
+							font-weight: 300;
+							font-size: 12px;
+							position: relative;
+							top: 2px;
+							margin-right: 6px;
+							transition: .3s text-decoration;
+							-webkit-transition: .3s text-decoration;
+						}
+						&:hover {
+							span {
+								text-decoration: underline;
+							}
+							.icon {
+								transform: rotate(360deg);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.left-side {
+		width: calc(100% - 400px);
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+
