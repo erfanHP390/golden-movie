@@ -1,0 +1,205 @@
+$color_1: #29B6F6;
+$color_2: #666;
+$color_3: #fff;
+$color_4: #939393;
+$color_5: #4a4a4a;
+$color_6: #686868;
+$background-color_1: #29B6F6;
+$background-color_2: rgba(255,255,255,.1);
+$background-color_3: rgba(255,255,255,.2);
+$background-color_4: #e8e9eb;
+$background-color_5: #5a5a5a;
+
+.main-single {
+	.movies-body {
+		.main-side-item.main-post-info {
+			.item-box {
+				>.title {
+					width: 100%;
+					display: flex;
+					align-items: center;
+					.seprator {
+						flex: 1;
+						height: 1px;
+						background-color: $background-color_1;
+						margin-right: 20px;
+					}
+					.icon {
+						margin-left: 7px;
+						color: $color_1;
+						font-size: 18px;
+						margin-top: -9px;
+					}
+					span {
+						font-weight: 300;
+						color: $color_2;
+						font-size: 20px;
+					}
+				}
+				>.list {
+					width: 100%;
+					display: block;
+					margin-top: 15px;
+					.list-item {
+						width: 100%;
+						display: flex;
+						align-items: center;
+						margin-bottom: 22px;
+						.link {
+							display: inline-flex;
+							align-items: center;
+						}
+						.pic {
+							width: 60px;
+							height: 60px;
+							overflow: hidden;
+							border-radius: 50%;
+							margin-left: 15px;
+							display: inline-block;
+							img {
+								width: 100%;
+								height: 100%;
+								display: block;
+							}
+						}
+						.list-content {
+							width: calc(100% - 75px);
+							display: inline-block;
+							.name {
+								width: 100%;
+								display: block;
+								font-weight: 500;
+								font-size: 16px;
+								color: $color_5;
+							}
+							.desc {
+								width: 100%;
+								display: block;
+								color: $color_6;
+								font-size: 13px;
+								font-weight: 300;
+							}
+						}
+						&:last-child {
+							margin-bottom: 0;
+						}
+						.info-item {
+							width: 100%;
+							display: flex;
+							align-items: center;
+							background-color: $background-color_4;
+							border-radius: 10px;
+							padding: 15px;
+							.title {
+								display: inline-block;
+								background-color: $background-color_5;
+								color: $color_3;
+								font-weight: 500;
+								font-size: 12px;
+								border-radius: 30px;
+								padding: 3px 10px;
+								margin-left: 10px;
+							}
+							.content {
+								font-size: 14px;
+								font-weight: 300;
+								color: $color_6;
+								width: 100%;
+								display: inline-flex;
+								justify-content: space-between;
+								align-items: center;
+								.imdb-rate-id {
+									background-color: $background-color_1;
+									color: $color_3;
+									display: inherit;
+									padding: 3px 10px 0;
+									border-radius: 5px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.main-post-info {
+		.main-list-slider {
+			width: 100%;
+			display: block;
+			padding: 0 35px;
+			position: relative;
+			margin-top: 15px;
+			.s-nav {
+				color: $color_3;
+				direction: ltr;
+				span {
+					position: absolute;
+					bottom: calc(50% + 10px);
+					border: 1px solid rgba(255,255,255,.5);
+					width: 25px;
+					height: 25px;
+					overflow: hidden;
+					border-radius: 50%;
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 11px;
+					cursor: pointer;
+					background-color: $background-color_2;
+					transition: .3s all;
+					-webkit-transition: .3s all;
+					&:hover {
+						background-color: $background-color_3;
+					}
+				}
+				span.next {
+					left: 0;
+				}
+				span.prev {
+					right: 0;
+				}
+				span.swiper-button-disabled {
+					opacity: .2;
+					cursor: default;
+				}
+			}
+			.item {
+				.pic {
+					width: 100%;
+					height: 139px;
+					border-radius: 50%;
+					overflow: hidden;
+					img {
+						width: 100%;
+						height: 100%;
+						display: block;
+					}
+				}
+				.list-content {
+					width: 100%;
+					display: block;
+					text-align: center;
+					margin-top: 10px;
+					color: $color_3;
+					.name {
+						font-size: 16px;
+						font-weight: 600;
+						width: 100%;
+						display: block;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						direction: ltr;
+					}
+					.desc {
+						width: 100%;
+						display: block;
+						color: $color_4;
+						font-size: 11px;
+						margin-top: 3px;
+					}
+				}
+			}
+		}
+	}
+}
