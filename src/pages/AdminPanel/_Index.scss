@@ -1,0 +1,123 @@
+
+/* ******************* */
+/* addForm */
+/* reform */
+/* users */
+/* adminPage */
+/* admin */
+/* addForm */
+/* reform */
+/* users */
+@media screen and (min-width: 850px) {
+	main {
+		flex-direction: row-reverse;
+	}
+	.sideBar {
+		max-width: 273px;
+	}
+	.addFormRow1 {
+		justify-content: center;
+	}
+	.addFormElem {
+		flex: 0 0 auto;
+		width: 30%;
+	}
+	.actorsForm {
+		width: 100%;
+		flex-direction: row-reverse;
+		div {
+			flex: 0 0 auto;
+			width: 40%;
+		}
+	}
+	.genres {
+		label {
+			flex: 0 0 auto;
+			width: 20%;
+		}
+	}
+	.FormRadioElem {
+		flex-direction: row-reverse;
+	}
+	.userInfoForm {
+		width: 70%;
+	}
+	.ReformInput {
+		width: 50%;
+	}
+	.user {
+		flex-direction: row;
+	}
+	.UserDetails {
+		flex-direction: row;
+	}
+}
+@media screen and (max-width: 850px) {
+	main {
+		flex-direction: column;
+	}
+	.sideBar {
+		width: 100%;
+	}
+	.MediasNums {
+		flex-direction: column;
+	}
+	.MediaBox {
+		width: 100%;
+		height: 20%;
+	}
+	.dashboard-footer {
+		flex-direction: column;
+		width: 100%;
+	}
+	.addFormRow1 {
+		justify-content: center;
+	}
+	.addFormElem {
+		flex: 0 0 auto;
+		width: 100%;
+	}
+	.actorsForm {
+		width: 100%;
+		flex-direction: column;
+		div {
+			flex: 0 0 auto;
+			width: 100%;
+		}
+	}
+	.genres {
+		label {
+			flex: 0 0 auto;
+			width: 40%;
+		}
+	}
+	.FormRadioElem {
+		flex-direction: column;
+		width: 100%;
+		h5 {
+			text-align: end;
+		}
+		div {
+			align-self: end;
+		}
+	}
+	.filmQualities {
+		flex-direction: column;
+		label {
+			flex: 0 0 auto;
+			width: 100%;
+		}
+	}
+	.userInfoForm {
+		width: 90%;
+	}
+	.ReformInput {
+		width: 90%;
+	}
+	.user {
+		flex-direction: column;
+	}
+	.UserDetails {
+		flex-direction: column;
+	}
+}
