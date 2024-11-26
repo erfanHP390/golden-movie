@@ -1,0 +1,15 @@
+
+.main-userpanel {
+	.panel-content {
+		>.content-box {
+			>.section_content.panel-plans {
+				.plans {
+					width: 100%;
+					display: flex;
+					flex-wrap: wrap;
+					padding-top: 20px;
+				}
+			}
+		}
+	}
+}
