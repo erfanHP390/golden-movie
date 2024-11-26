@@ -1,0 +1,153 @@
+$color_1: #29b6f6;
+$background-color_1: #1a1f2a;
+$background-color_2: #131722;
+$background-color_3: #29b6f6;
+
+.sideBar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.closeDiv {
+  margin-right: 0.5rem;
+}
+.closeBtn {
+  border: none;
+  background-color: #29b6f6;
+  color: #fff;
+  direction: ltr;
+  width: 40px;
+  height: 40px;
+}
+.closeBtn img {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+.w-0 {
+  width: 0;
+}
+.sidebarbtn {
+  background-color: $background-color_1;
+  border: none;
+  border-radius: 20px;
+  transition: 2s;
+  padding: 0.5rem;
+  &:hover {
+    background-color: $background-color_2;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.closeDiv {
+  margin-right: 0.5rem;
+  align-self: flex-start;
+}
+.closeBtn {
+  border: none;
+  width: 40px;
+  height: 40px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.adminPagesTopP {
+  padding-top: 190px;
+}
+.AdminPages {
+  border-top: 2px solid #29b6f6;
+  margin-top: 0.4rem;
+  overflow-y: scroll;
+  max-height: calc(100vh - 169px);
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.dashboardPage {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.AdminDetails {
+  border: 2px solid #29b6f6;
+  border-radius: 30px;
+  margin: 3rem;
+  margin-top: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.adminName {
+  margin: 0.5rem;
+}
+.adminImg {
+  border-radius: 20px;
+}
+.SideBarLink {
+  padding-right: 1.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  direction: ltr;
+  background-color: transparent;
+}
+.SideBarBtn {
+  color: $color_1;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  border: none;
+  height: 62px;
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  direction: ltr;
+  background-color: transparent;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: $background-color_3;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  &:hover {
+    &::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+  }
+}
+
+.dropdownLinks {
+  display: none;
+  flex-direction: column;
+}
