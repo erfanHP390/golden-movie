@@ -1,0 +1,41 @@
+$color_1: #ddd;
+$color_2: #29b6f6;
+$color_3: #9b9b9b;
+$background-color_1: #131722;
+$background-color_2: #29b6f6;
+$background-color_3: #1a1f2a;
+
+.box-bg {
+	background-color: $background-color_3;
+}
+.white-text {
+	color: #fff;
+}
+.blue-text {
+	color: #fff;
+}
+.light-Gray-text {
+	color: $color_3;
+}
+.nowrap {
+	text-wrap: nowrap;
+}
+.none-d {
+	display: none !important;
+}
+button {
+	text-wrap: nowrap;
+	text-align: center;
+}
+
+
+
+@import "../pages/AdminPanel/AminPanelIndex/AminPanelIndex";
+@import "../components/Admin/Sidebar/Sidebar";
+@import "../pages/AdminPanel/AdminAddFilm/AdminAddFilm";
+@import "../pages/AdminPanel/AdminListFilm/AdminListFilm";
+@import "../pages/AdminPanel/AdminEditInfo/AdminEditInfo";
+@import "../pages/AdminPanel/AdminTickets/AdminTickets";
+@import "../pages/AdminPanel/AdminPanelUsers/AdminPanelUsers";
+@import "../pages/AdminPanel/Index";
+@import "../components/Admin/Chart/Chart"
