@@ -1,0 +1,107 @@
+$background-color_1: #131722;
+$background-color_2: rgba(255, 255, 255, 0.9);
+$background-color_3: #e0f7fa;
+$background-color_4: rgba(255, 255, 255, 0.95);
+$background-color_5: #b3e5fc;
+$background-color_6: #81d4fa;
+$background-color_7: rgba(255, 255, 255, 0.85);
+$background-color_8: #4fc3f7;
+$background-color_9: rgba(255, 255, 255, 0.8);
+
+/* استایل‌های واکنش‌گرا */
+/* تنظیمات اضافی برای خوانایی بهتر در صفحه‌های کوچک */
+.recharts-surface {
+	background-color: $background-color_1;
+}
+.recharts-cartesian-grid {
+	line {
+		stroke: #ccc;
+	}
+}
+.recharts-xAxis {
+	.recharts-cartesian-axis-tick {
+		fill: #29b6f6;
+	}
+}
+.recharts-yAxis {
+	.recharts-cartesian-axis-tick {
+		fill: #29b6f6;
+	}
+}
+.recharts-tooltip-wrapper {
+	background-color: $background-color_2;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.recharts-line {
+	stroke: #ff5858;
+}
+.recharts-line-dots {
+	fill: #ff5858;
+}
+.recharts-legend-wrapper {
+	background-color: $background-color_1;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+}
+@media (max-width: 1400px) {
+
+	.recharts-tooltip-wrapper {
+		background-color: $background-color_4;
+		border: 1px solid #bbb;
+	}
+	.recharts-legend-wrapper {
+		background-color: $background-color_3;
+		border: 1px solid #bbb;
+	}
+}
+@media (max-width: 1200px) {
+
+	.recharts-tooltip-wrapper {
+		background-color: $background-color_2;
+		border: 1px solid #aaa;
+	}
+	.recharts-legend-wrapper {
+		background-color: $background-color_5;
+		border: 1px solid #aaa;
+	}
+}
+@media (max-width: 992px) {
+
+	.recharts-tooltip-wrapper {
+		background-color: $background-color_7;
+		border: 1px solid #999;
+	}
+	.recharts-legend-wrapper {
+		background-color: $background-color_6;
+		border: 1px solid #999;
+	}
+}
+@media (max-width: 768px) {
+
+	.recharts-tooltip-wrapper {
+		background-color: $background-color_9;
+		border: 1px solid #888;
+	}
+	.recharts-legend-wrapper {
+		background-color: $background-color_8;
+		border: 1px solid #888;
+	}
+	.recharts-line {
+		stroke-width: 2px;
+	}
+	.recharts-line-dots {
+		r: 5;
+	}
+	.recharts-xAxis {
+		.recharts-cartesian-axis-tick {
+			font-size: 0.8rem;
+		}
+	}
+	.recharts-yAxis {
+		.recharts-cartesian-axis-tick {
+			font-size: 0.8rem;
+		}
+	}
+}
