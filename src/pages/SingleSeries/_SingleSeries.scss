@@ -1,0 +1,40 @@
+$color_1: #666;
+$color_2: #000;
+
+.siteSingle-movie {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	.right-side {
+		width: calc(100% - 400px);
+		display: inline-block;
+	}
+	.breadcrumbs {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		color: $color_1;
+		i {
+			font-size: 13px;
+			margin-top: 2px;
+			margin-left: 7px;
+		}
+		a {
+			color: $color_1;
+			font-weight: 300;
+			font-size: 14px;
+			&::after {
+				content: "/";
+				color: $color_2;
+				padding: 0 12px;
+				cursor: default;
+			}
+			&:last-child {
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+}
