@@ -1,0 +1,42 @@
+$color_1: var(--primary-red);
+
+.ticketsMain {
+	overflow-y: scroll;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+.ticketsList {
+	overflow: auto;
+	border-radius: 20px;
+	direction: rtl;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+.tickets {
+	hr {
+		width: 100%;
+		height: 2px;
+		border: 1px solid #29b6f6;
+	}
+}
+.ticket {
+	border-bottom: 1px dashed #29b6f6;
+	padding: 10px 0;
+	min-width: 900px;
+	flex-direction: row;
+	button {
+		border: none;
+		border-radius: 15px;
+		text-align: center;
+		padding-bottom: 5px;
+		margin: 2px;
+		transition: 2s;
+		&:hover {
+			color: #ff5858;
+		}
+	}
+}
+
+
