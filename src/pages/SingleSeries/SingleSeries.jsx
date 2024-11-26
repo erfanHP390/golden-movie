@@ -36,7 +36,7 @@ export default function SingleSeries () {
   return (
     <>
         <Helmet>
-      <title>{`فیلم ${smovie && smovie.title}`}</title>
+      <title>{`سریال ${smovie && smovie.title}`}</title>
     </Helmet>
       <Header />
       <div className='main-site'>

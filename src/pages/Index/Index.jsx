@@ -20,7 +20,7 @@ export default function Index() {
     return (
     <>
     <Helmet>
-        <title>دیجی موویز ، بروزترین مرجع فیلم و سریال</title>
+        <title>گلدن موویز ، بروزترین مرجع فیلم و سریال</title>
     </Helmet>
       <Header />
       <Main />
