@@ -1,0 +1,145 @@
+$color_1: #ff5d5d;
+$color_2: #58b4fd;
+$color_3: #fecb00;
+$color_4: #57d872;
+$color_5: #29B6F6;
+$color_6: #000;
+$color_7: #777;
+$color_8: #fff;
+$background-color_1: #fff;
+$background-color_2: #29B6F6 ;
+$background-color_3: #ff5858;
+$background-color_4: #f3f3f3;
+$background-color_5: #29B6F6;
+
+.mainSite-sidebar {
+	.sidebar-box {
+		background-color: $background-color_1;
+		box-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%);
+		border-radius: 20px;
+		padding: 20px 0;
+		margin-top: 30px;
+		&:first-child {
+			margin-top: 0;
+		}
+		.box-headline {
+			padding: 0 20px;
+			>.title {
+				>.icon {
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					i {
+						background-color: $background-color_1;
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 21px;
+					}
+				}
+				>.icon.imdb {
+					i {
+						font-size: 13px;
+					}
+				}
+				>.icon.red {
+					background: linear-gradient(to top,#dc1d0f61,#e91e6340);
+					color: $color_1;
+				}
+				>.icon.blue {
+					background: linear-gradient(to top,#2196f361,#2196f340);
+					color: $color_2;
+				}
+				>.icon.yellow {
+					background: linear-gradient(to top,#fecb0087,#fecb0040);
+					color: $color_3;
+				}
+				>.icon.green {
+					background: linear-gradient(to top,#57d87261,#57d87240);
+					color: $color_4;
+				}
+				>.icon.orange {
+					background: linear-gradient(to top,#29B6F6,#29b5f658);
+					color: $color_5;
+				}
+				>.content {
+					margin-right: 10px;
+					span {
+						font-weight: 500;
+						font-size: 16px;
+						color: $color_6;
+					}
+					samp {
+						color: $color_7;
+						font-size: 13px;
+						margin-top: 2px;
+					}
+				}
+			}
+			>.info {
+				.btn {
+					padding: 3px 14px;
+					background-color: $background-color_2;
+					border-radius: 30px;
+					font-size: 14px;
+					font-weight: 500;
+					color: $color_8;
+					transition: .3s background-color;
+					&:hover {
+						opacity: .8 !important;
+						background-color: $background-color_3;
+					}
+				}
+			}
+			>.info.switchable-btn {
+				direction: ltr;
+				.sbtn {
+					padding: 3px 14px;
+					background-color: $background-color_4;
+					font-size: 11px;
+					border-radius: 30px;
+					margin-right: 7px;
+					cursor: pointer;
+					transition: .3s opacity;
+					color: $color_6;
+					&:last-child {
+						margin-right: 0;
+					}
+					&:hover {
+						opacity: .8 !important;
+					}
+				}
+				.sbtn.active {
+					background-color: $background-color_5 !important;
+					color: $color_8 !important;
+					opacity: 1 !important;
+					&::after {
+						content: "";
+						width: 0;
+						height: 0;
+						border-top: 5px solid #29B6F6;
+						border-bottom: 5px solid transparent;
+						border-right: 5px solid transparent;
+						border-left: 5px solid transparent;
+						position: absolute;
+						display: flex;
+						top: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.mainSite-sidebar {
+	.sidebar-box {
+		.box-content {
+			width: calc(100% - 40px);
+			margin: 10px 20px 0;
+		}
+	}
+}
+
