@@ -1,0 +1,43 @@
+$color_1: #fff;
+
+.mainSite-sidebar {
+	.sidebar-box {
+		.box-content {
+			.series-list {
+				li {
+					margin-bottom: 7px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+				padding-top: 10px;
+				.item {
+					height: 65px;
+					border-radius: 5px;
+					img {
+						transition: .5s transform;
+					}
+					.desc {
+						bottom: -16px;
+						right: 0;
+						background: rgba(0,0,0,.5);
+						text-shadow: 0 1px 3px rgb(0 0 0);
+						color: $color_1;
+						padding: 3px 16px;
+						font-size: 12px;
+						text-overflow: ellipsis;
+						transition: .2s background;
+					}
+					&:hover {
+						.desc {
+							background: rgba(0,0,0,.95);
+						}
+						img {
+							transform: scale(1.05);
+						}
+					}
+				}
+			}
+		}
+	}
+}
