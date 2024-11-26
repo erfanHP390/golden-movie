@@ -1,0 +1,205 @@
+$color_1: #ff9800;
+$color_2: #fff;
+$color_3: #ffc107;
+$color_4: #2e51a2;
+$color_5: #666;
+$background-color_1: #fff;
+$background-color_2: #0000;
+$border-color_1: #ff9800;
+
+.siteSingle-movie {
+	.rltd-posts {
+		.main-slider {
+			.item {
+				width: 100%;
+				display: flex;
+				position: relative;
+				justify-content: center;
+				transition: .3s all;
+				-webkit-transition: .3s all;
+				border-radius: 12px;
+				overflow: hidden;
+				height: 300px;
+				height: 285px;
+				figure {
+					width: 100%;
+					display: block;
+					height: 100%;
+					img {
+						width: 100%;
+						display: block;
+						height: 100%;
+					}
+				}
+				.cover-content {
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 100%;
+					height: 100%;
+					background: rgba(0,0,0,.6);
+					border-radius: 20px;
+					transition: .7s all;
+					-webkit-transition: .7s all;
+					visibility: hidden;
+					opacity: 0;
+					.playicon {
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						top: 0;
+						right: 0;
+						svg {
+							fill: #d1d0cf;
+							width: 35px;
+							height: 35px;
+						}
+					}
+					.bottom-content {
+						position: absolute;
+						bottom: 0;
+						width: 100%;
+						display: flex;
+						justify-content: space-between;
+						right: 0;
+						padding: 0 15px 7px;
+						align-items: center;
+						.popular-rate {
+							color: $color_1;
+							direction: ltr !important;
+							font-size: 20px;
+							display: flex;
+							i {
+								margin-right: 5px;
+							}
+						}
+						.imdb-rate {
+							color: $color_2;
+							direction: ltr !important;
+							span {
+								font-weight: 700;
+								font-size: 23px;
+								color: $color_3 !important;
+							}
+						}
+						.imdb-rate.mal {
+							span {
+								color: $color_4 !important;
+							}
+						}
+					}
+					.badges {
+						position: absolute;
+						left: 0;
+						bottom: 55px;
+						width: 100%;
+						padding: 0 15px;
+						.badge-item {
+							display: flex;
+							width: 100%;
+							align-items: center;
+							margin-bottom: 10px;
+							.icon {
+								width: 20px;
+								height: 20px;
+								fill: #fff;
+								display: inline-block;
+							}
+							.title {
+								display: inline-block;
+								color: $color_2;
+								font-weight: 500;
+								margin-right: 5px;
+								font-size: 15px;
+							}
+							&:last-child {
+								margin-bottom: 0 !important;
+							}
+						}
+					}
+				}
+				&:hover {
+					.cover-content {
+						transform: scale(.9);
+						visibility: visible;
+						opacity: 1;
+					}
+					.title-box {
+						transform: scale(1.1);
+						visibility: hidden;
+						opacity: 0;
+					}
+				}
+				.title-box {
+					position: absolute;
+					width: 100%;
+					height: 40%;
+					right: 0;
+					bottom: 0;
+					background: linear-gradient(-180deg,transparent,rgba(0,0,0,.3) 50%,rgba(0,0,0,.8) 100%);
+					transition: .5s all;
+					-webkit-transition: .5s all;
+					direction: ltr;
+					text-align: left;
+					h2 {
+						color: $color_2;
+						font-weight: 600;
+						position: absolute;
+						bottom: 10px;
+						padding: 0 15px;
+						font-size: 16px;
+						line-height: 25px;
+						width: 100%;
+						text-align: left;
+					}
+				}
+			}
+			width: 100%;
+			display: block;
+			margin-top: 15px;
+		}
+		width: 100%;
+		display: block;
+		background-color: $background-color_1;
+		margin-top: 25px;
+		box-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%);
+		padding: 20px;
+		border-radius: 20px;
+		.headline {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 1px dashed rgba(0,0,0,.1);
+			padding-bottom: 10px;
+			.title {
+				display: inline-flex;
+				align-items: center;
+				font-weight: 500;
+				color: $color_5;
+				i {
+					margin: -3px 0 0 5px;
+				}
+			}
+			.pagination {
+				width: auto;
+				.swiper-pagination-bullet {
+					background-color: $background-color_2;
+					border: 1px solid #c8cfe5;
+					opacity: 1;
+					margin: 0 7px 0 0;
+					transition: all .3s;
+					-webkit-transition: all .3s;
+				}
+				.swiper-pagination-bullet.swiper-pagination-bullet-active {
+					background: #ff9800;
+					border-color: $border-color_1;
+					width: 25px;
+					border-radius: 50px;
+				}
+			}
+		}
+	}
+}
