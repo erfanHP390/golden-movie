@@ -1,0 +1,269 @@
+$color_1: #fff;
+$background-color_1: rgb(255 255 255 / 20%);
+$background-color_2: #29B6F6;
+$background-color_3: rgba(255,255,255,.6);
+$background-color_4: #fff;
+$background-color_5: #f9f9f9;
+$background-color_6: #FF5858;
+
+.site-header {
+	background-size: cover;
+	height: 135px;
+	box-shadow: 0 23px 20px -19px #ddd;
+	>.header-bg {
+		right: 0;
+		top: 0;
+		overflow: hidden;
+		>.pic {
+			background: #555d6b url("../../public/images/header-bg.png") no-repeat;
+			background-size: cover;
+			background-position: center;
+			right: 0;
+			top: 0;
+		}
+	}
+	>.main-header-user {
+		top: 0;
+		right: 0;
+		>.head-user-side {
+			bottom: 85px;
+			right: 0;
+			direction: ltr;
+			>.main {
+				direction: ltr;
+			}
+			.notifications {
+				left: 130px;
+				z-index: 9999;
+				.icon {
+					color: $color_1;
+					cursor: pointer;
+					background-color: $background-color_1;
+					width: 35px;
+					height: 35px;
+					border-radius: 50%;
+					.count-unread {
+						top: -5px;
+						right: -5px;
+						z-index: 1;
+						background-color: $background-color_2;
+						width: 18px;
+						height: 18px;
+						border-radius: 7px;
+						direction: ltr;
+						font-size: 13px;
+						padding-top: 3px;
+					}
+				}
+				.list {
+					top: calc(100% + 15px);
+					z-index: 999;
+					background-color: $background-color_3;
+					backdrop-filter: blur(5px);
+					border-radius: 20px;
+					width: 320px;
+					left: 0;
+					padding: 15px;
+					direction: rtl;
+					visibility: hidden;
+					opacity: 0;
+					transition: 0.3s all;
+				}
+				&:hover {
+					.list {
+						top: calc(100% + 10px);
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	>.main-header-side {
+		height: 70px;
+		right: 0;
+		bottom: 0;
+		&::before {
+			content: "";
+			height: 100%;
+			min-width: 2.5%;
+			position: absolute;
+			width: calc((100% - 1600px)/ 2);
+			top: 0;
+			right: 0;
+			background-color: $background-color_4;
+		}
+		&::after {
+			content: "";
+			height: 100%;
+			min-width: 2.5%;
+			position: absolute;
+			width: calc((100% - 1600px)/ 2);
+			top: 0;
+			left: 0;
+			background-color: $background-color_4;
+		}
+		.header-info {
+			.site-logo {
+				width: 280px;
+				border-bottom: 12px solid #fff;
+				&::after {
+					content: "";
+					position: absolute;
+					height: 100%;
+					width: 75px;
+					top: 0;
+					z-index: 2;
+				}
+				&::before {
+					content: "";
+					position: absolute;
+					height: 100%;
+					width: 75px;
+					top: 0;
+					z-index: 2;
+				}
+				>a {
+					height: 100%;
+					>img {
+						width: 135px;
+					}
+				}
+			}
+			.header-nav-info {
+				width: calc(100% - 280px);
+				background-color: $background-color_4;
+				.header-menu {
+					width: calc(100% - 435px);
+				}
+				.search-box {
+					width: 400px;
+					>form {
+						background-color: $background-color_5;
+						box-shadow: 0 2px 0 rgb(0 0 0 / 11%);
+						border-radius: 30px;
+						padding: 5px 15px 5px 10px;
+						>input[type=text] {
+							background: 0 0;
+							height: 30px;
+							color: #000;
+							outline: 0;
+							width: calc(100% - 30px);
+						}
+						>button {
+							width: 30px;
+							height: 30px;
+							border-radius: 50%;
+							background-color: $background-color_2;
+							color: $color_1;
+							box-shadow: 0 0 0 5px #29b5f68e;
+							cursor: pointer;
+							transition: 0.3s background-color;
+							&:hover {
+								background-color: $background-color_6;
+								box-shadow: 0 0 0 5px #ff585896;
+							}
+						}
+					}
+				}
+				.user-panel {
+					left: -0;
+					top: -49px;
+					width: 115px;
+					.login-register {
+						.btn {
+							font-size: 14px;
+							background-color: $background-color_2;
+							color: $color_1;
+							padding: 7px 10px;
+							border-radius: 10px;
+							transition: 0.3s background-color;
+							&:hover {
+								background-color: $background-color_6;
+							}
+							svg {
+								position: relative;
+								top: -1px;
+							}
+							.title {
+								margin-right: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	>.main-header-side.fixed {
+		top: 0;
+		position: fixed !important;
+		z-index: 999999;
+		box-shadow: 0 0 8px rgb(51 51 51 / 30%);
+		.header-info {
+			.site-logo {
+				background-color: $background-color_4;
+			}
+		}
+	}
+}
+body.selectable {
+	.site-header {
+		>.main-header-user {
+			>.head-user-side {
+				.notifications {
+					left: 135px;
+				}
+			}
+		}
+	}
+}
+body.logged-in {
+	.site-header {
+		>.main-header-user {
+			>.head-user-side {
+				.notifications {
+					left: 75px;
+				}
+			}
+		}
+	}
+}
+body.logged-in.selectable {
+	.site-header {
+		>.main-header-user {
+			>.head-user-side {
+				.notifications {
+					left: 95px;
+				}
+			}
+		}
+	}
+}
+.admin-bar {
+	.site-header {
+		>.main-header-side.fixed {
+			top: 32px;
+		}
+	}
+}
+#wpadminbar {
+	z-index: 99999999;
+}
+body {
+	.site-header {
+		>.main-header-side {
+			.header-info {
+				.site-logo {
+					&::before {
+						background: url("../../public/images/curve-light.png") no-repeat -21px 0;
+						right: 0;
+					}
+					&::after {
+						background: url("../../public/images/curve-light.png") no-repeat -116px 0;
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+}
