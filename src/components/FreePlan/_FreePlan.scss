@@ -1,0 +1,17 @@
+
+.freeplan {
+	background-image: url("../public/images/PosterYM.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 30%;
+	display: flex;
+	div {
+		text-align: center;
+	}
+}
+.free-plan-btn {
+	border-radius: 10px;
+	font-weight: 500;
+	font-size: large;
+    color: #fff;
+}
