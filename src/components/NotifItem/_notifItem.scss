@@ -1,0 +1,67 @@
+$color_1: #222;
+$color_2: #29B6F6;
+$color_3: #fff;
+$background-color_1: rgba(0,0,0,.1);
+$background-color_2: #29B6F6;
+$background-color_3: #FF5858;
+
+.site-header {
+	>.main-header-user {
+		>.head-user-side {
+			.notifications {
+				.list {
+					.item {
+						cursor: pointer;
+						padding: 10px;
+						border-radius: 15px;
+						transition: 0.3s background-color;
+						margin-bottom: 5px;
+						&:hover {
+							background-color: $background-color_1;
+						}
+						.title {
+							font-size: 14px;
+							font-weight: 600;
+							color: $color_1;
+							i {
+								font-size: 16px;
+								position: relative;
+								margin-top: -4px;
+								margin-left: 5px;
+							}
+						}
+						.description {
+							margin-top: 5px;
+							font-size: 13px;
+							font-weight: 300;
+							color: $color_1;
+							line-height: 25px;
+						}
+						.info {
+							margin-top: 5px;
+							border-top: 1px solid rgba(255,255,255,.1);
+							padding-top: 7px;
+							.time {
+								font-weight: 500;
+								color: $color_2;
+								font-size: 11px;
+							}
+						}
+					}
+					.show-all {
+						background-color: $background-color_2;
+						color: $color_3;
+						font-size: 13px;
+						font-weight: 500;
+						padding: 8px 0;
+						border-radius: 10px;
+						transition: 0.3s background-color;
+						&:hover {
+							background-color: $background-color_3;
+						}
+					}
+				}
+			}
+		}
+	}
+}
