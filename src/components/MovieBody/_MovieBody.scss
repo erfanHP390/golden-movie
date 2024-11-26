@@ -1,0 +1,110 @@
+$color_1: #444;
+$color_2: #ffad49;
+$color_3: #555;
+$background-color_1: #fff;
+$background-color_2: unset;
+$background-color_3: #999;
+
+.main-single {
+	.movies-body {
+		.main-side-item.main-post-metas {
+			background-color: $background-color_1;
+			border-radius: 10px;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 10px 15px;
+			width: calc(100% - 20px);
+			box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+			display: none;
+			.item {
+				display: inline-flex;
+				flex-wrap: wrap;
+				margin: 0 !important;
+				border-radius: 0;
+				background-color: $background-color_2;
+				border-left: 1px solid rgb(0 0 0 / 10%);
+				overflow: hidden;
+				padding: 10px;
+				.title {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					width: 100%;
+					white-space: nowrap;
+					color: $color_1;
+					font-weight: 500;
+					font-size: 11px;
+					i {
+						margin: 0;
+						width: 100%;
+						font-size: 12px;
+						text-align: center;
+						margin-bottom: 6px;
+						color: $color_2;
+						position: relative;
+						top: 3px;
+					}
+				}
+				.item-info {
+					color: $color_3;
+					width: 100%;
+					display: block;
+					font-size: 10px;
+					text-align: center;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					a {
+						color: $color_3;
+						display: inline-block;
+						transition: .2s color;
+						-webkit-transition: .2s color;
+						&:hover {
+							color: $color_2;
+						}
+						&::after {
+							content: "";
+							width: 4px;
+							height: 1px;
+							background-color: $background-color_3;
+							display: inline-block;
+							position: relative;
+							top: -2px;
+							margin: 0 5px;
+							cursor: text;
+						}
+						&:last-child {
+							&::after {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		.main-side-item.main-post-excerpt {
+			width: 100%;
+			display: none;
+			text-align: justify;
+			font-size: 13px;
+			line-height: 30px;
+			padding: 0 20px;
+			color: $color_1;
+		}
+	}
+}
+
+
+.main-single {
+	.movies-body {
+		.main-side-item.main-post-info {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			.item-box {
+				width: calc(33.33% - 25px);
+				display: inline-block;
+			}
+		}
+	}
+}

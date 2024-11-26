@@ -1,0 +1,47 @@
+$color_1: #999;
+$color_2: #ff9800;
+$background-color_1: #fff;
+
+.main-single {
+	.movies-body {
+		position: relative;
+		margin-top: 55px;
+		width: 100%;
+		display: block;
+		z-index: 9;
+		.res-info {
+			width: 100%;
+			display: none;
+			justify-content: center;
+			position: relative;
+			z-index: 9999;
+			margin-bottom: 25px;
+			.content-info-btn {
+				background-color: $background-color_1;
+				margin-top: -40px;
+				border-radius: 30px;
+				box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+				display: inline-flex;
+				align-items: center;
+				padding: 5px 12px;
+				font-size: 12px;
+				cursor: pointer;
+				span {
+					font-weight: 300;
+					color: $color_1;
+					display: inline-block;
+				}
+				i {
+					color: $color_2;
+					font-size: 16px;
+					margin-right: 8px;
+					margin-top: -7px;
+					display: inline-block;
+				}
+			}
+		}
+		.main-side-item {
+			margin-bottom: 30px;
+		}
+	}
+}
