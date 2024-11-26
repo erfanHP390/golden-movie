@@ -1,0 +1,29 @@
+$background-color_1: #fff;
+
+.main-userpanel {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	padding: 20px 0;
+	min-height: 50vh;
+	.panel-sidebar {
+		.inner-side {
+			background-color: $background-color_1;
+			width: 300px;
+			display: inline-block;
+			padding: 30px 20px;
+			box-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%);
+			position: relative;
+			z-index: 1;
+			border-radius: 20px;
+		}
+	}
+	.panel-content {
+		width: calc(100% - 330px);
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+		padding: 30px 0;
+	}
+}
