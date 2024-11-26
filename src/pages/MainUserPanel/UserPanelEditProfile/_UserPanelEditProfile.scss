@@ -1,0 +1,213 @@
+$color_1: #666;
+$color_2: #ff9800;
+$color_3: #444;
+$color_4: #a9a9a9;
+$color_5: #525252;
+$color_6: #a4a7b2;
+$color_7: #fff;
+$background-color_1: #fff;
+$background-color_2: #f5f5f5;
+$background-color_3: #e0f2f1;
+$background-color_4: #ff9800;
+$border-top-color_1: rgb(255, 255, 255);
+$border-top-color_2: rgba(0, 0, 0, 0.1);
+$border-right-color_1: rgb(255, 255, 255);
+$border-right-color_2: rgba(0, 0, 0, 0.1);
+$border-bottom-color_1: rgb(255, 255, 255);
+$border-bottom-color_2: rgba(0, 0, 0, 0.1);
+$border-left-color_1: rgb(255, 255, 255);
+$border-left-color_2: rgba(0, 0, 0, 0.1);
+
+.edit-profile-form {
+	width: 100%;
+	max-width: 500px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	>.input-profile {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		text-align: center;
+		.preview {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			display: block;
+			margin: 0 auto;
+			img {
+				width: 100%;
+				height: 100%;
+				display: block;
+				filter: drop-shadow(1px 4px 6px rgba(0, 0, 0, .5));
+				border-radius: 50%;
+				border: 7px solid #fff;
+				border-top-color: $border-top-color_1;
+				border-right-color: $border-right-color_1;
+				border-bottom-color: $border-bottom-color_1;
+				border-left-color: $border-left-color_1;
+			}
+		}
+		.desc {
+			width: 100%;
+			display: block;
+			margin-top: 20px;
+			color: $color_1;
+			font-size: 13px;
+			a.link {
+				color: $color_2;
+				text-decoration: underline;
+				display: inline-block;
+				margin: 0 2px;
+			}
+		}
+	}
+	>.form-inputs {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 20px;
+		>.input-box {
+			width: calc(50% - 10px);
+			margin-bottom: 15px;
+			>label {
+				width: 100%;
+				display: block;
+				color: $color_3;
+				font-size: 12px;
+				font-weight: 400;
+				margin-bottom: 5px;
+			}
+			>.input {
+				border: 1px solid rgba(0,0,0,.1);
+				border-top-color: $border-top-color_2;
+				border-right-color: $border-right-color_2;
+				border-bottom-color: $border-bottom-color_2;
+				border-left-color: $border-left-color_2;
+				align-items: center;
+				border-radius: 5px;
+				background-color: $background-color_1;
+				justify-content: space-between;
+				height: 35px;
+				display: flex;
+				width: 100%;
+				i {
+					width: 30px;
+					height: 100%;
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					border-left: 1px solid rgba(0,0,0,.1);
+					background-color: $background-color_2;
+					color: $color_4;
+					font-size: 15px;
+				}
+				>input {
+					border: 0;
+					width: calc(100% - 30px);
+					outline: 0;
+					color: $color_5;
+					font-weight: 300;
+					font-size: 12px;
+					background: 0 0;
+					height: 100%;
+					padding: 0 7px;
+				}
+			}
+		}
+		>.input-box.textarea {
+			width: 100%;
+			textarea {
+				width: 100%;
+				display: block;
+				border: 1px solid rgba(0,0,0,.1);
+				outline: 0;
+				resize: vertical;
+				max-width: 100%;
+				min-width: 100%;
+				min-height: 100px;
+				border-radius: 5px;
+				background-color: $background-color_1;
+				color: $color_5;
+				font-weight: 300;
+				font-size: 12px;
+				padding: 10px;
+			}
+		}
+		>.change-pass-box {
+			width: 100%;
+			display: block;
+			border: 1px solid rgba(0,0,0,.1);
+			border-radius: 5px;
+			overflow: hidden;
+			>.headline {
+				width: 100%;
+				display: flex;
+				padding: 10px;
+				font-size: 13px;
+				background-color: $background-color_3;
+				align-items: center;
+				justify-content: space-between;
+				color: $color_3;
+				cursor: pointer;
+				font-size: 13px;
+				color: $color_3;
+				cursor: pointer;
+			}
+			>.change-body {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				padding: 15px;
+				.input-pass.last-pass {
+					width: 100%;
+					display: flex;
+					margin-bottom: 10px;
+				}
+				.input-pass {
+					width: calc(50% - 10px);
+					display: inline-flex;
+					align-items: center;
+					>label {
+						font-size: 12px;
+						color: $color_6;
+						width: 100px;
+						display: inline-block;
+					}
+					>input {
+						width: calc(100% - 100px);
+						margin: 0;
+						border: 1px solid rgba(0,0,0,.1);
+						outline: 0;
+						border-radius: 5px;
+						padding: 5px;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		>.input-box.btn {
+			width: 100%;
+			margin: 12px 0 0;
+			display: block;
+			.save-profile {
+				background-color: #29b6f6;
+				color: $color_7;
+				border: 0;
+				outline: 0;
+				padding: 7px 30px;
+				border-radius: 5px;
+				font-size: 13px;
+				font-weight: 600;
+				cursor: pointer;
+				transition: all 0.5s ease;
+				&:hover {
+					background-color: #ff5858;
+				}
+			}
+		}
+	}
+}
