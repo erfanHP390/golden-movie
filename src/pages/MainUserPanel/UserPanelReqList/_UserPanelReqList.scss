@@ -1,0 +1,180 @@
+$color_1: #525252;
+$color_2: #777;
+$color_3: #fff;
+$color_4: #ff9800;
+$color_5: #4caf50;
+$color_6: #f44336;
+$color_7: #e91e63;
+$color_8: #999;
+$color_9: #d19921;
+$color_10: #fd8375;
+$color_11: #0668e1;
+$color_12: #76c937;
+$color_13: #bd27d3c9;
+$background-color_1: rgba(247,248,250,.67);
+$background-color_2: #fafafa;
+$background-color_3: #ff980012;
+$background-color_4: #4caf5014;
+$background-color_5: #f4433612;
+$background-color_6: #e91e630f;
+$background-color_7: rgb(251 203 101 / 30%);
+$background-color_8: rgba(253,131,117,.08);
+$background-color_9: #0668e138;
+$background-color_10: rgb(142 213 87 / 20%);
+$background-color_11: #bd27d321;
+
+.panel-requests {
+	.table-list {
+		width: 100%;
+		text-align: center;
+		border-collapse: collapse;
+		thead {
+			th {
+				padding: 20px;
+				background-color: $background-color_1;
+				font-size: 13px;
+				font-weight: 600;
+				color: $color_1;
+			}
+		}
+		tbody {
+			tr {
+				&:nth-child(even) {
+					background-color: $background-color_2;
+				}
+			}
+			td {
+				padding: 20px;
+				font-size: 13px;
+				color: $color_2;
+				font-weight: 400;
+				.status {
+					color: $color_3;
+					padding: 5px 10px;
+					border-radius: 3px;
+					font-size: 12px;
+					font-weight: 300;
+				}
+				.status.progress {
+					background-color: $background-color_3;
+					color: $color_4;
+				}
+				.status.confirmed {
+					background-color: $background-color_4;
+					color: $color_5;
+				}
+				.status.notvalid {
+					background-color: $background-color_5;
+					color: $color_6;
+				}
+				.status.declined {
+					background-color: $background-color_6;
+					color: $color_7;
+				}
+				.msg {
+					white-space: break-spaces;
+					display: block;
+					min-width: 200px;
+				}
+				.referral {
+					color: $color_4;
+					font-weight: 500;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+.panel-requests.tickets {
+	.table-list {
+		thead {
+			th.title {
+				text-align: right;
+			}
+		}
+		tbody {
+			td.title {
+				text-align: right;
+			}
+		}
+	}
+	.manage-btns {
+		display: inline-flex;
+		align-items: center;
+		a {
+			color: $color_8;
+			font-weight: 300;
+			display: inline-flex;
+			align-items: center;
+			border-bottom: 1px dotted #999;
+			padding-bottom: 5px;
+			i {
+				margin-left: 5px;
+			}
+		}
+	}
+	.title-box {
+		display: inline-flex;
+		align-items: center;
+		.link-to-ticket {
+			color: $color_8;
+			font-weight: 600;
+			font-size: 14px;
+			cursor: pointer;
+			transition: .3s color;
+			-webkit-transition: .3s color;
+			&:hover {
+				color: $color_9 !important;
+			}
+		}
+		.ticket-status {
+			margin-right: 10px;
+			padding: 5px 10px;
+			border-radius: 3px;
+			font-size: 12px;
+			font-weight: 300;
+		}
+		.ticket-status.pending {
+			background-color: $background-color_7;
+			color: $color_9;
+		}
+		.ticket-status.closed {
+			background-color: $background-color_8;
+			color: $color_10;
+		}
+		.ticket-status.progress {
+			background-color: $background-color_9;
+			color: $color_11;
+		}
+		.ticket-status.answered {
+			background-color: $background-color_10;
+			color: $color_12;
+		}
+		.ticket-status.admin {
+			background-color: $background-color_11;
+			color: $color_13;
+		}
+	}
+}
+.panel-requests.transactions {
+	.table-list {
+		tbody {
+			td {
+				.status.pending {
+					background-color: $background-color_3;
+					color: $color_4;
+				}
+				.status.success {
+					background-color: $background-color_4;
+					color: $color_5;
+				}
+				.status.failed {
+					background-color: $background-color_6;
+					color: $color_7;
+				}
+			}
+		}
+	}
+}
