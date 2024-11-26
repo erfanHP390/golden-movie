@@ -1,0 +1,71 @@
+$color_1: #525252;
+$color_2: #777;
+$color_3: #999;
+$color_4: #d19921;
+$background-color_1: rgba(247,248,250,.67);
+$background-color_2: rgb(251 203 101 / 30%);
+
+.panel-requests {
+	.table-list {
+		width: 100%;
+		text-align: center;
+		border-collapse: collapse;
+		thead {
+			th {
+				padding: 20px;
+				background-color: $background-color_1;
+				font-size: 13px;
+				font-weight: 600;
+				color: $color_1;
+			}
+		}
+		tbody {
+			td {
+				padding: 20px;
+				font-size: 13px;
+				color: $color_2;
+				font-weight: 400;
+			}
+		}
+	}
+}
+.panel-requests.tickets {
+	.manage-btns {
+		display: inline-flex;
+		align-items: center;
+		a {
+			color: $color_3;
+			font-weight: 300;
+			display: inline-flex;
+			align-items: center;
+			border-bottom: 1px dotted #999;
+			padding-bottom: 5px;
+			i {
+				margin-left: 5px;
+			}
+		}
+	}
+	.title-box {
+		display: inline-flex;
+		align-items: center;
+		.link-to-ticket {
+			color: $color_3;
+			font-weight: 600;
+			font-size: 14px;
+			cursor: pointer;
+			transition: .3s color;
+			-webkit-transition: .3s color;
+		}
+		.ticket-status.pending {
+			background-color: $background-color_2;
+			color: $color_4;
+		}
+		.ticket-status {
+			margin-right: 10px;
+			padding: 5px 10px;
+			border-radius: 3px;
+			font-size: 12px;
+			font-weight: 300;
+		}
+	}
+}
