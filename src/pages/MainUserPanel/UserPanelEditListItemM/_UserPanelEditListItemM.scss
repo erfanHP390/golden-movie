@@ -1,0 +1,79 @@
+$color_1: #fff;
+$background-color_1: #f3f3f3;
+$background-color_2: #fff;
+$background-color_3: #29B6F6;
+
+.panel-public-list {
+	>.edit-items-head {
+		width: 100%;
+		display: block;
+		position: relative;
+		.headline-choose {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			padding: 15px 20px;
+			align-items: center;
+			background-color: $background-color_1;
+			border-radius: 10px;
+			position: relative;
+			>.title {
+				width: 60px;
+				display: inline-block;
+				font-size: 15px;
+				font-weight: 500;
+			}
+			>.input {
+				width: calc(100% - 175px);
+				border: 1px solid rgba(0,0,0,.1);
+				outline: 0;
+				border-radius: 5px;
+				background-color: $background-color_2;
+				padding: 5px 15px;
+			}
+			>.btn {
+				width: 100px;
+				margin-right: 15px;
+				background-color: $background-color_3;
+				font-size: 13px;
+				font-weight: 500;
+				color: $color_1;
+				border-radius: 10px;
+				padding: 6px 20px;
+				display: inline-block;
+				box-shadow: 0 0 0 5px #29B6F6;
+				cursor: pointer;
+				transition: .3s all;
+				-webkit-transition: .3s box-shadow;
+				border: 0;
+				outline: 0;
+                &:hover {
+                    background-color: #ff5858;
+                    box-shadow: 0 0 0 5px #ff5858;
+                }
+			}
+		}
+		.save-items {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			margin-top: 15px;
+			.save {
+				background-color: $background-color_3;
+				border: 0;
+				outline: 0;
+				color: $color_1;
+				padding: 10px;
+				border-radius: 5px;
+				cursor: pointer;
+				font-weight: 500;
+				font-size: 12px;
+				transition: .3s background-color;
+				-webkit-transition: .3s background-color;
+                &:hover {
+                    background-color: #ff5858;
+                }
+			}
+		}
+	}
+}
