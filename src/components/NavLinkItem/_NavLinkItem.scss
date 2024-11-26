@@ -1,0 +1,51 @@
+$color_1: #29B6F6;
+$color_2: #000;
+
+.site-header {
+	>.main-header-side {
+		.header-info {
+			.header-nav-info {
+				.header-menu {
+					>li {
+						margin-left: 45px;
+						margin-top: 18px;
+						&:last-child {
+							margin-left: 0;
+						}
+						>.item {
+							>.icon {
+								width: 27px;
+								transition: .3s transform;
+								>svg {
+									color: $color_1;
+									display: block;
+									font-size: 28px;
+								}
+							}
+							>.title {
+								margin-right: 15px;
+								cursor: pointer;
+								>span {
+									font-size: 15px;
+									color: $color_2;
+								}
+								>samp {
+									color: $color_1;
+									font-size: 15px;
+									margin-top: 2px;
+								}
+							}
+						}
+						&:hover {
+							>.item {
+								>.icon {
+									transform: scale(1.2);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
