@@ -1,0 +1,63 @@
+$color_1: #999;
+$color_2: #777;
+$color_3: #222;
+$font-family_1: "Font Awesome 6 Pro";
+
+.main-userpanel {
+	.panel-content {
+		width: calc(100% - 330px);
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+		padding: 30px 0;
+		>.headline-title {
+			width: 100%;
+			display: block;
+			.breadcrumbs {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				a {
+					display: inline-flex;
+					font-size: 12px;
+					font-weight: 300;
+					color: $color_1;
+					align-items: center;
+					&::after {
+						content: "\f104";
+						font-family: $font-family_1;
+						font-weight: 100;
+						-moz-osx-font-smoothing: grayscale;
+						-webkit-font-smoothing: antialiased;
+						display: var(--fa-display,inline-block);
+						font-style: normal;
+						font-variant: normal;
+						line-height: 1;
+						text-rendering: auto;
+						margin: 0 5px;
+						color: $color_2;
+						margin-top: -2px;
+					}
+					&:last-child {
+						&::after {
+							display: none;
+						}
+					}
+				}
+			}
+			>.title-box {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				margin-top: 5px;
+				align-items: center;
+				>.title {
+					font-size: 25px;
+					font-weight: 600;
+					color: $color_3;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
