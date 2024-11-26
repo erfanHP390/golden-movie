@@ -6,6 +6,7 @@ $background-color_2: #0d121e;
 $background-color_3: #29B6F6;
 
 .main-responsiveside {
+	z-index: 9999;
 	visibility: hidden;
 	opacity: 0;
 	transition: .5s all;
