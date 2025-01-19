@@ -18,7 +18,7 @@ A brief description of what this project does and who it's for
 ## Demo
 
 link to demo
-https://golden-movies.liara.run
+https://golden-movie-w78l.vercel.app/
 
 ## Features
 
